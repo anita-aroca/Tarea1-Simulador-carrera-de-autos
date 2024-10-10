@@ -1,3 +1,0 @@
-/home/javier/Documentos/Académico/2024-2/Sistemas Operativos/Tareas/tareas-SSOO/tarea1/cmake-build-debug/CMakeFiles/tarea1.dir
-/home/javier/Documentos/Académico/2024-2/Sistemas Operativos/Tareas/tareas-SSOO/tarea1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/javier/Documentos/Académico/2024-2/Sistemas Operativos/Tareas/tareas-SSOO/tarea1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
