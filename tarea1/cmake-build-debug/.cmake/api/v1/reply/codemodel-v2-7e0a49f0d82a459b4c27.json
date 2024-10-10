@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "tarea1",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "tarea1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tarea1-Debug-9b1dec3c695b7d465bfa.json",
+					"name" : "tarea1",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/javier/Documentos/Acad\u00e9mico/2024-2/Sistemas Operativos/Tareas/tareas-SSOO/tarea1/cmake-build-debug",
+		"source" : "/home/javier/Documentos/Acad\u00e9mico/2024-2/Sistemas Operativos/Tareas/tareas-SSOO/tarea1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
