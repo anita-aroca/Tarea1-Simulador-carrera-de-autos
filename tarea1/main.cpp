@@ -1,4 +1,10 @@
+/* Autores:
+ * Ana Aroca Sanhueza
+ * Javier González Catalán
+*/
+
 #include <iostream>
+#include <stdio.h>
 #include <cstdlib>
 #include <unistd.h>
 #include <thread>
