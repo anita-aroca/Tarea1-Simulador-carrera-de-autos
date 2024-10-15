@@ -68,7 +68,6 @@ int main(int argc, char* argv[]) {
     return 0;
 }
 
-
 /*TODO: En cada iteración, cada distancia avanzada por un auto es un número aleatorio entre 1 y 10 (metros), igual que la velocidad
  * que cambia entre 100-500 ms. Se debe ir guardando la velocidad que avanza cada auto para luego mostrar un total de
  * metros avanzados cada vez que un auto determinado avance.
