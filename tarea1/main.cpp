@@ -44,7 +44,7 @@ void avanzarAuto(Auto& corredor, int M) {
         int avanza = funcRandom(1,  10);
         // Generar tiempo aleatorio entre 100 y 500 milisegundos
         int tiempo = funcRandom(100, 500);
-        // Protege/Bloquea la impresión con un mutex para evitar colisiones en la salida
+        // Protege/Bloquea la variable a la que se accede.
         mtx.lock();
         corredor.distRec += avanza;
         cout << morao << "Auto" << corredor.id << " avanza " << avanza << " metros (total: " << corredor.distRec << " metros)" << reset << endl;
@@ -52,7 +52,7 @@ void avanzarAuto(Auto& corredor, int M) {
         mtx.unlock();
 
         // Si alcanza o supera la meta, termina la carrera.
-        if (corredor.distRec >= M) {
+        if(corredor.distRec >= M){
             cout << morao <<"¡Auto" << corredor.id << " ha terminado la carrera!" << endl;
             break;
         }
