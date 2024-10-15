@@ -60,15 +60,7 @@ Lugar Auto
 3 Auto2
 \`\`\`
 
-Al revisar los procesos en el sistema mientras la carrera está en curso se debería poder ver el proceso con sus 3 hebras (vista utilizando `htop`):
-
-\`\`\`bash
-PID     TGID    USER        PRI  NI  VIRT   RES   SHR   S  CPU%  MEM%  TIME+   Command
-415471  415471  amvaldesj   20   0   30684  2028  1848  S  0.0   0.0   0:00.00 ./carrera 100 3
-415472  415471  amvaldesj   20   0   30684  2028  1848  S  0.0   0.0   0:00.00 |-/carrera 100 3
-415473  415471  amvaldesj   20   0   30684  2028  1848  S  0.0   0.0   0:00.00 |-/carrera 100 3
-415474  415471  amvaldesj   20   0   30684  2028  1848  S  0.0   0.0   0:00.00 |-/carrera 100 3
-\`\`\`
+Al revisar los procesos en el sistema mientras la carrera está en curso se debería poder ver el proceso con sus 3 hebras (vista utilizando `htop`)
 
 #### Consideraciones
 
