@@ -4,9 +4,6 @@
  */
 
 #include <iostream>
-#include <stdio.h>
-#include <cstdlib>
-#include <unistd.h>
 #include <thread>
 #include <mutex>
 #include <chrono>
