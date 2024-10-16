@@ -104,7 +104,7 @@ int main(int argc, char* argv[]){
 
     for(int i = 0; i < N; ++i){
         autos[i].id = i + 1;
-        hilos.push_back(thread(funcAutoAvanza, ref(autos[i]), M));
+        hilos.emplace_back(funcAutoAvanza, ref(autos[i]), M);
     }
 
     // Esperar a que todos los hilos terminen
