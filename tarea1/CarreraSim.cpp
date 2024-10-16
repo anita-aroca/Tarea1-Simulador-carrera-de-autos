@@ -19,6 +19,7 @@ vector<int> posiciones; // Vector para almacenar las posiciones de llegada de lo
 
 const string morao = "\033[35m";
 const string reset = "\033[0m";
+const string rojo = "\033[31m";
 
 // Definir un auto:
 struct Auto{
@@ -75,7 +76,7 @@ void funcAutoAvanza(Auto& corredor, int M){
 // Función principal
 int main(int argc, char* argv[]){
     if (argc != 3){
-        cerr << "Uso: " << argv[0] << " <distancia_total> <numero_autos>" << endl;
+        cerr << rojo << "Uso: " << argv[0] << " <distancia_total> <numero_autos>" << reset <<endl;
         return 1;
     }
 
@@ -84,11 +85,11 @@ int main(int argc, char* argv[]){
 
     // Verificaciones de entrada
     if(N < 2){
-        cerr << "Se necesita al menos 2 autos para realizar una carrera." << endl;
+        cerr << rojo << "Se necesita al menos 2 autos para realizar una carrera." << reset <<endl;
         return 1;
     }
     if(M < 30){
-        cerr << "La distancia de la carrera debe ser de al menos 30 metros." << endl;
+        cerr << rojo <<"La distancia de la carrera debe ser de al menos 30 metros." << reset <<endl;
         return 1;
     }
 
