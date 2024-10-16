@@ -13,6 +13,7 @@
 using namespace std; // cout, endl
 using namespace chrono; // tiempo, unidades de medida
 using namespace this_thread;
+using namespace std::chrono;
 
 mutex mtx;
 vector<int> posiciones; // Vector para almacenar las posiciones de llegada de los autos
@@ -30,7 +31,7 @@ struct Auto{
 // Función para randomizar valores
 int funcRandom(int a, int b){
     random_device rd;
-    uniform_int_distribution range(a, b);
+    uniform_int_distribution<int> range(a, b);
     return range(rd);
 }
 
