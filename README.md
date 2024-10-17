@@ -1,4 +1,8 @@
 # Tarea #1: *"Simulador de Carrera de Autos"*
+## Autores
+- [Ana Aroca Sanhueza](https://github.com/anita-aroca)
+- [Javier González Catalán](https://github.com/jabibi-g)
+
 ## Compilación
 ```
 g++ CarreraSim.cpp -o output -std=c++11
