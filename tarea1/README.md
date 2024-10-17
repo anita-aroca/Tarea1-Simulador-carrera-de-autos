@@ -7,5 +7,5 @@ g++ CarreraSim.cpp -o output -std=c++11
 ```
 ./output <metros> <autos en carrera>
 ```
-- `metros`: Se deben ingresar los kilómetros de longitud que debe tener la tarea.
+- `metros`: Se deben ingresar los metros de longitud que debe tener la tarea.
 - `autos en carrera`: Número de autos que competirán en la carrera.
