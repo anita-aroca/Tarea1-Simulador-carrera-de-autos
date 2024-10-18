@@ -15,9 +15,10 @@ using namespace chrono; // tiempo, unidades de medida
 using namespace this_thread;
 using namespace std::chrono;
 
-mutex mtx;
+mutex mtx; //Mutex para proteger el acceso
 vector<int> posiciones; // Vector para almacenar las posiciones de llegada de los autos
 
+//Colores para la terminal
 const string morao = "\033[35m";
 const string reset = "\033[0m";
 const string rojo = "\033[31m";
@@ -56,8 +57,8 @@ void funcAutoAvanza(Auto& corredor, int M){
         mtx.lock();
         corredor.distRec += avanza;
         cout << "Auto " << corredor.id << " avanza " << avanza << " metros (total: " << corredor.distRec << " metros)" << endl;
+        //Libera el mutex para permitir que los otros hilos accedan
         mtx.unlock();
-        // Si alcanza o supera la meta, termina la carrera
         // Si alcanza o supera la meta, termina la carrera
         if(corredor.distRec >= M){
             // Bloquear el mutex para modificar el vector de posiciones y mostrar el mensaje
@@ -76,6 +77,7 @@ void funcAutoAvanza(Auto& corredor, int M){
 
 // Función principal
 int main(int argc, char* argv[]){
+    //Verifica que pasen argumentos correctos
     if (argc != 3){
         cerr << rojo << "Uso: " << argv[0] << " <distancia_total> <numero_autos>" << reset <<endl;
         return 1;
@@ -104,7 +106,8 @@ int main(int argc, char* argv[]){
 
     for(int i = 0; i < N; ++i){
         autos[i].id = i + 1;
-        hilos.emplace_back(funcAutoAvanza, ref(autos[i]), M);
+        //Crea un hilo para cada auto
+        hilos.emplace_back(funcAutoAvanza, ref(autos[i]), M); 
     }
 
     // Esperar a que todos los hilos terminen
